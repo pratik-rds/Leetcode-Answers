@@ -1,0 +1,17 @@
+import pandas as pd
+
+def getDataframeSize(players: pd.DataFrame) -> List[int]:
+    num_rows, num_columns = players.shape
+    return [num_rows, num_columns]
+
+if __name__ == "__main__":
+    data = {
+        "player_id": [1,2,3],
+        "name": ["john", "jose", "johnny"],
+        "age": [23,25,26],
+        "position": ["Striker", "midfiled", "defence"]
+    }
+
+    players = pd.DataFrame(data)
+    size = getDataframeSize(players)
+    print(size)
