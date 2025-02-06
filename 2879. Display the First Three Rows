@@ -1,0 +1,17 @@
+import pandas as pd
+
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+    return employees.head(3)
+
+if __name__ == "__main__":
+    data = {
+        "employee_id": [1,2,3,4,5,6],
+        "name": ["abc", "jbn", "sda", "dse", "efsc", "efvv"],
+        "department": ["sales", "support", "tech", "tech", "sales", "sales"],
+        "salary": [45852, 65000, 130000, 150000, 74586, 74125]
+    }
+
+    employees = pd.DataFrame(data)
+    first_three_rows = salectFirstRows(employees)
+
+    print (first_three_rows)
