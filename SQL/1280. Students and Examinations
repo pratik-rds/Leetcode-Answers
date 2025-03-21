@@ -5,3 +5,5 @@ left join examinations e ON s.student_id = e.student_id and sub.subject_name = e
 group by s.student_id, s.student_name, sub.subject_name
 order by s.student_id, sub.subject_name;
 
+
+
