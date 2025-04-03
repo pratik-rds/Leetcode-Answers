@@ -7,3 +7,4 @@ from (select
         from activity a group by a.machine_id, a.process_id
         ) as process_times
         group by machine_id;
+
