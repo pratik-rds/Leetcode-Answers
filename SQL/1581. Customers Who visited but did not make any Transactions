@@ -5,3 +5,4 @@ where t.visit_id is NULL
 group by v.customer_id;
 
 
+
